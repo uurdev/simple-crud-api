@@ -16,5 +16,6 @@ public interface ProductService {
 
     public List<Product> getAll();
 
+    public Product findById(Long photoId);
 
 }

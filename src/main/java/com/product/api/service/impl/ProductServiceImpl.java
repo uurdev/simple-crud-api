@@ -54,4 +54,9 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> getAll() {
         return productRepository.findAll();
     }
+
+    @Override
+    public Product findById(Long photoId) {
+       return productRepository.findById(photoId).get();
+    }
 }
