@@ -21,6 +21,11 @@ public class ProductRestController {
         return productService.getAll();
     }
 
+    @GetMapping(value = "/product/{id}")
+    public Product getProduct(@PathVariable Long id) {
+        return productService.findById(id);
+    }
+
     @PostMapping(value = "/save/product")
     public HttpStatus saveProduct(@RequestBody Product product) {
         return productService.save(product);

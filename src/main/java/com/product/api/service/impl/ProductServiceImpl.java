@@ -56,7 +56,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product findById(Long photoId) {
-       return productRepository.findById(photoId).get();
+    public Product findById(Long productId) {
+       return productRepository.findById(productId).get();
     }
 }
